@@ -23,14 +23,14 @@ const reasons = [
 
 export default function WhySnehdeep() {
   return (
-    <section className="py-20 px-6 md:px-16" style={{ background: "linear-gradient(135deg, #0A2E47 0%, #0B3C5D 60%, #0D3F63 100%)" }}>
+    <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-10 lg:px-16" style={{ background: "linear-gradient(135deg, #0A2E47 0%, #0B3C5D 60%, #0D3F63 100%)" }}>
       <div className="container-max">
         {/* Header */}
         <div className="text-center mb-14">
           <div className="inline-flex items-center gap-2 text-accent font-heading font-semibold text-xs px-0 py-0 mb-4 tracking-widest uppercase border-b border-accent/40 pb-1">
             Why Snehdeep
           </div>
-          <h2 className="font-heading font-bold text-white mb-4 leading-tight" style={{ fontSize: "clamp(28px, 4vw, 40px)" }}>
+          <h2 className="font-heading font-bold text-white mb-4 leading-tight" style={{ fontSize: "clamp(24px, 4vw, 40px)" }}>
             The Right Finance Mix <br />
             <span className="text-accent italic font-semibold">Starts Here</span>
           </h2>
@@ -44,7 +44,7 @@ export default function WhySnehdeep() {
           {reasons.map((r) => (
             <div
               key={r.num}
-              className="rounded-2xl p-7 border border-white/10 hover:border-accent/30 transition-all duration-300 group"
+              className="rounded-2xl p-5 sm:p-7 border border-white/10 hover:border-accent/30 transition-all duration-300 group"
               style={{ background: "rgba(255,255,255,0.04)" }}
             >
               <p className="font-heading text-4xl font-bold text-accent/25 group-hover:text-accent/40 transition-colors duration-300 mb-4 leading-none">

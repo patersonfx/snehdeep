@@ -24,7 +24,7 @@ export default function Navbar() {
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       scrolled ? "bg-white/95 backdrop-blur-sm shadow-card py-2" : "bg-transparent py-4"
     }`}>
-      <div className="container-max px-6 md:px-16 flex items-center justify-between">
+      <div className="container-max px-4 sm:px-6 md:px-10 lg:px-16 flex items-center justify-between">
 
         {/* Logo */}
         <a href="#" className="flex items-center gap-2.5">

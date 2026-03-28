@@ -57,7 +57,7 @@ export default function Opportunities() {
           {opportunities.map((o, i) => (
             <div
               key={i}
-              className="group bg-white border border-gray-100 rounded-2xl p-8 shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300"
+              className="group bg-white border border-gray-100 rounded-2xl p-5 sm:p-8 shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300"
             >
               <div className={`inline-flex items-center justify-center w-14 h-14 rounded-2xl ${o.bg} ${o.color} mb-5`}>
                 {o.icon}
@@ -69,7 +69,7 @@ export default function Opportunities() {
         </div>
 
         {/* CTA strip */}
-        <div className="bg-primary rounded-2xl px-8 py-8 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="bg-primary rounded-2xl px-5 py-6 sm:px-8 sm:py-8 flex flex-col md:flex-row items-center justify-between gap-4 sm:gap-6 text-center md:text-left">
           <div>
             <p className="font-heading text-lg font-semibold text-white mb-1">Interested in collaborating?</p>
             <p className="font-body text-sm text-white/60">Freelancers who intend to collaborate may contact us to explore Opportunities.</p>

@@ -57,7 +57,7 @@ export default function Testimonials() {
           {testimonials.map((t, i) => (
             <div
               key={i}
-              className="relative bg-white border border-gray-100 rounded-2xl p-8 shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300"
+              className="relative bg-white border border-gray-100 rounded-2xl p-5 sm:p-8 shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300"
             >
               {/* Quote mark */}
               <div className="absolute top-6 right-8 text-6xl font-heading text-primary/8 leading-none select-none">

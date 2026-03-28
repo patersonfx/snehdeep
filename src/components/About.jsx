@@ -11,7 +11,7 @@ export default function About() {
   return (
     <section className="section-pad bg-bgsection">
       <div className="container-max">
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+        <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
 
           {/* ── Left: Logo visual ── */}
           <div className="flex justify-center">
@@ -20,11 +20,11 @@ export default function About() {
               <div className="absolute inset-0 bg-accent/20 rounded-full blur-3xl scale-75 pointer-events-none" />
 
               {/* Dark circle — matches Hero style */}
-              <div className="relative w-72 h-72 md:w-80 md:h-80 rounded-full flex items-center justify-center"
+              <div className="relative w-56 h-56 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full flex items-center justify-center"
                 style={{ background: "linear-gradient(135deg, #0A2E47 0%, #0B3C5D 60%, #155A80 100%)" }}>
                 {/* Inner ring */}
                 <div className="absolute inset-4 rounded-full border border-white/10" />
-                <Logo size={190} />
+                <Logo size={140} />
               </div>
 
               {/* AMFI badge */}

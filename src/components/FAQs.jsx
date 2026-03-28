@@ -55,7 +55,7 @@ export default function FAQs() {
   return (
     <section className="section-pad bg-white">
       <div className="container-max">
-        <div className="grid md:grid-cols-2 gap-16 items-start">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start">
 
           {/* Left: Heading */}
           <div className="md:sticky md:top-28">

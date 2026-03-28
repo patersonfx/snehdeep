@@ -6,10 +6,10 @@ const serviceLinks = ["Home Loans", "Commercial Loans", "Mutual Fund Investments
 export default function Footer() {
   return (
     <footer className="bg-dark">
-      <div className="container-max px-6 md:px-16 py-16">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
+      <div className="container-max px-4 sm:px-6 md:px-10 lg:px-16 py-12 sm:py-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-10">
           {/* Brand */}
-          <div className="col-span-2 md:col-span-1">
+          <div className="col-span-1 sm:col-span-2 md:col-span-1">
             <a href="#" className="flex items-center gap-3 mb-4">
               <Logo size={44} />
               <div className="leading-tight">
@@ -124,7 +124,7 @@ export default function Footer() {
 
       {/* Bottom bar */}
       <div className="border-t border-white/10">
-        <div className="container-max px-6 md:px-16 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <div className="container-max px-4 sm:px-6 md:px-10 lg:px-16 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="font-body text-xs text-white/30">
             © 2026 Snehdeep Enterprises. All rights reserved.
           </p>

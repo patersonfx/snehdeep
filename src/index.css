@@ -20,13 +20,22 @@
 
   html {
     scroll-behavior: smooth;
-    scroll-padding-top: 80px;
+    scroll-padding-top: 70px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
   }
 }
 
 @layer utilities {
   .section-pad {
-    @apply pt-14 pb-16 px-6 md:px-16;
+    @apply pt-12 pb-14 px-4 sm:px-6 md:px-10 lg:px-16;
   }
 
   .container-max {
@@ -34,25 +43,25 @@
   }
 
   .btn-primary {
-    @apply bg-primary text-white font-body font-semibold px-7 py-3.5 rounded-xl
+    @apply bg-primary text-white font-body font-semibold px-6 py-3 rounded-xl
            hover:bg-primary-dark transition-all duration-200 shadow-md hover:shadow-lg
-           active:scale-95;
+           active:scale-95 text-sm sm:text-base sm:px-7 sm:py-3.5;
   }
 
   .btn-outline {
-    @apply border-2 border-accent text-accent font-body font-semibold px-7 py-3.5 rounded-xl
+    @apply border-2 border-accent text-accent font-body font-semibold px-6 py-3 rounded-xl
            hover:bg-accent hover:text-white transition-all duration-200
-           active:scale-95;
+           active:scale-95 text-sm sm:text-base sm:px-7 sm:py-3.5;
   }
 
   .btn-white {
-    @apply bg-white text-primary font-body font-semibold px-7 py-3.5 rounded-xl
+    @apply bg-white text-primary font-body font-semibold px-6 py-3 rounded-xl
            hover:bg-bglight transition-all duration-200 shadow-md hover:shadow-lg
-           active:scale-95;
+           active:scale-95 text-sm sm:text-base sm:px-7 sm:py-3.5;
   }
 
   .section-label {
     @apply inline-flex items-center gap-2 bg-accent/10 text-accent font-heading font-semibold
-           text-sm px-4 py-1.5 rounded-full mb-5 tracking-wide uppercase;
+           text-xs sm:text-sm px-3 py-1 sm:px-4 sm:py-1.5 rounded-full mb-4 sm:mb-5 tracking-wide uppercase;
   }
 }

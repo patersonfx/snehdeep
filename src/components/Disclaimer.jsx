@@ -30,7 +30,7 @@ const disclaimers = [
 
 export default function Disclaimer() {
   return (
-    <div className="bg-dark border-t border-white/5 px-6 md:px-16 py-6">
+    <div className="bg-dark border-t border-white/5 px-4 sm:px-6 md:px-10 lg:px-16 py-6">
       <div className="container-max">
         <div className="flex flex-wrap items-start gap-x-8 gap-y-3">
           {/* Label */}

@@ -23,9 +23,9 @@ module.exports = {
         body: ["Inter", "sans-serif"],
       },
       fontSize: {
-        h1: ["52px", { lineHeight: "1.15", fontWeight: "700" }],
-        h2: ["36px", { lineHeight: "1.25", fontWeight: "600" }],
-        h3: ["22px", { lineHeight: "1.4", fontWeight: "600" }],
+        h1: ["clamp(32px, 5vw, 52px)", { lineHeight: "1.15", fontWeight: "700" }],
+        h2: ["clamp(24px, 4vw, 36px)", { lineHeight: "1.25", fontWeight: "600" }],
+        h3: ["clamp(18px, 2.5vw, 22px)", { lineHeight: "1.4", fontWeight: "600" }],
         body: ["16px", { lineHeight: "1.7", fontWeight: "400" }],
       },
       maxWidth: {
