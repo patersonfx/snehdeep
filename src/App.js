@@ -7,6 +7,7 @@ import Opportunities from "./components/Opportunities";
 import FAQs from "./components/FAQs";
 import Testimonials from "./components/Testimonials";
 import CTA from "./components/CTA";
+import Disclaimer from "./components/Disclaimer";
 import Footer from "./components/Footer";
 
 // Wraps a section with an anchor that offsets for the fixed navbar
@@ -30,6 +31,7 @@ function App() {
       <Section id="faqs"><FAQs /></Section>
       <Section id="testimonials"><Testimonials /></Section>
       <Section id="contact"><CTA /></Section>
+      <Disclaimer />
       <Footer />
     </div>
   );

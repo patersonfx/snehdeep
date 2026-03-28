@@ -16,12 +16,15 @@ export default function About() {
           {/* ── Left: Logo visual ── */}
           <div className="flex justify-center">
             <div className="relative">
-              {/* Soft glow */}
-              <div className="absolute inset-0 bg-accent/15 rounded-full blur-3xl scale-75 pointer-events-none" />
+              {/* Glow behind */}
+              <div className="absolute inset-0 bg-accent/20 rounded-full blur-3xl scale-75 pointer-events-none" />
 
-              {/* Decorative circle */}
-              <div className="relative w-72 h-72 md:w-80 md:h-80 rounded-full bg-white border border-gray-100 shadow-card-hover flex items-center justify-center">
-                <Logo size={180} />
+              {/* Dark circle — matches Hero style */}
+              <div className="relative w-72 h-72 md:w-80 md:h-80 rounded-full flex items-center justify-center"
+                style={{ background: "linear-gradient(135deg, #0A2E47 0%, #0B3C5D 60%, #155A80 100%)" }}>
+                {/* Inner ring */}
+                <div className="absolute inset-4 rounded-full border border-white/10" />
+                <Logo size={190} />
               </div>
 
               {/* AMFI badge */}
