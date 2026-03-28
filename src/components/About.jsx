@@ -1,34 +1,74 @@
+import Logo from "./Logo";
+
+const highlights = [
+  "10+ years banking experience in Treasury Risk at a leading bank",
+  "Deep understanding of economics and changing financial products",
+  "AMFI Registered (ARN 140122) &amp; IRDA licensed advisor",
+  "Personalized, unbiased guidance — your goals first, always",
+];
+
 export default function About() {
   return (
-    <section className="py-[100px] bg-bglight">
-      <div className="max-w-container mx-auto px-margin grid md:grid-cols-2 gap-gutter items-center">
-        <div>
-          <img
-            src="/about.png"
-            alt="About Snehdeep"
-            className="rounded-2xl w-full max-w-md shadow-lg"
-          />
-        </div>
+    <section className="section-pad bg-bgsection">
+      <div className="container-max">
+        <div className="grid md:grid-cols-2 gap-16 items-center">
 
-        <div>
-          <h2 className="font-heading text-h2 text-primary mb-6">
-            About Snehdeep Financial Services
-          </h2>
+          {/* ── Left: Logo visual ── */}
+          <div className="flex justify-center">
+            <div className="relative">
+              {/* Soft glow */}
+              <div className="absolute inset-0 bg-accent/15 rounded-full blur-3xl scale-75 pointer-events-none" />
 
-          <p className="font-body text-body text-dark/70 mb-4">
-            With over 10 years of experience, we provide expert financial
-            guidance to individuals and businesses across India. Our mission is
-            to simplify financial planning and help you achieve your goals.
-          </p>
+              {/* Decorative circle */}
+              <div className="relative w-72 h-72 md:w-80 md:h-80 rounded-full bg-white border border-gray-100 shadow-card-hover flex items-center justify-center">
+                <Logo size={180} />
+              </div>
 
-          <p className="font-body text-body text-dark/70 mb-8">
-            From home loans to wealth management, our multi-bank partnerships
-            ensure you always get the best rates and personalized solutions.
-          </p>
+              {/* AMFI badge */}
+              <div className="absolute -bottom-5 left-1/2 -translate-x-1/2 bg-white rounded-2xl shadow-card-hover px-5 py-3.5 flex items-center gap-3 whitespace-nowrap">
+                <div className="w-10 h-10 rounded-xl bg-accent/15 flex items-center justify-center text-accent font-heading font-bold text-lg">✓</div>
+                <div>
+                  <p className="font-heading text-sm font-semibold text-dark">AMFI Registered</p>
+                  <p className="font-body text-xs text-muted">ARN: 140122</p>
+                </div>
+              </div>
+            </div>
+          </div>
 
-          <button className="bg-primary text-white font-body font-semibold px-8 py-3.5 rounded-lg hover:bg-opacity-90 transition">
-            Know More
-          </button>
+          {/* ── Right: Content ── */}
+          <div>
+            <div className="section-label">About Us</div>
+            <h2 className="font-heading text-h2 text-dark mb-5 leading-tight">
+              19+ Years of Financial Expertise
+            </h2>
+            <p className="font-body text-muted mb-4 leading-relaxed">
+              <strong className="text-dark">Snehdeep Enterprises</strong> was established in 2014 by{" "}
+              <strong className="text-dark">Jasmeena Jatin Sanghani</strong>, with a vision to assist clients with ideas to create Assets and manage Liabilities — helping them build lasting Wealth.
+            </p>
+            <p className="font-body text-muted mb-4 leading-relaxed">
+              Jasmeena brings 10+ years of banking experience from the Treasury Risk department of a leading bank. Combined with 9 years of Snehdeep's journey, that's 19+ years immersed in the world of finance.
+            </p>
+            <p className="font-body text-muted mb-8 leading-relaxed">
+              Financial knowledge is the key to good financial decisions. Financial fitness is the key to a stress-free life — and that's what we help you achieve.
+            </p>
+
+            <ul className="space-y-3 mb-10">
+              {highlights.map((text, i) => (
+                <li key={i} className="flex items-start gap-3">
+                  <span className="flex-shrink-0 mt-0.5 w-8 h-8 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
+                    <svg viewBox="0 0 24 24" fill="none" className="w-4 h-4" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                      <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                  </span>
+                  <span className="font-body text-sm text-dark font-medium leading-relaxed" dangerouslySetInnerHTML={{ __html: text }} />
+                </li>
+              ))}
+            </ul>
+
+            <a href="#contact" className="btn-primary inline-block">
+              Let's Talk it Out
+            </a>
+          </div>
         </div>
       </div>
     </section>
