@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import Services from "./components/Services";
 import Stats from "./components/Stats";
 import About from "./components/About";
+import WhySnehdeep from "./components/WhySnehdeep";
 import Opportunities from "./components/Opportunities";
 import FAQs from "./components/FAQs";
 import Testimonials from "./components/Testimonials";
@@ -26,6 +27,7 @@ function App() {
       <Section id="home"><Hero /></Section>
       <Section id="services"><Services /></Section>
       <Stats />
+      <WhySnehdeep />
       <Section id="about"><About /></Section>
       <Section id="opportunities"><Opportunities /></Section>
       <Section id="faqs"><FAQs /></Section>
