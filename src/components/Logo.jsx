@@ -1,8 +1,3 @@
-/**
- * Snehdeep logo component.
- * Uses the real logo image (public/logo.png) with transparent background.
- * size prop controls width/height in pixels (default 48).
- */
 export default function Logo({ size = 48, className = "" }) {
   return (
     <img
